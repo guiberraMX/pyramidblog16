@@ -1,0 +1,14 @@
+{{!< default}}
+{{#post}}
+<article id="postMain" class="{{post_class}}">
+    <div class="heroImage showHeroImage">
+        <!-- add location of address by changing the longitude and latitude values bellow. -->
+        <div id="gmaps" data-lat="51.508742" data-lng="-0.120850"></div>
+    </div>
+    <section class="postContent">
+        <h1 class="postTitle">{{{title}}}</h1>
+        <hr />
+        {{content}}
+    </section>
+</article>
+{{/post}}

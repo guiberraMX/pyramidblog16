@@ -1,0 +1,27 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+
+{{! Everything inside the #author tags pulls data from the author }}
+
+{{#author}}
+<article id="postMain" class="{{post_class}}">
+    <div class="heroImage {{#if cover}}showHeroImage{{/if}}" style="{{#if cover}}background-image: url({{cover}}){{/if}}"></div>
+    <section class="postContent authorColumn">
+            {{#if image}}
+                <div style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
+            {{/if}}
+            <h1 class="postTitle">{{name}}</h1>
+            <div class="authorMeta">
+                {{#if location}}<span class="author-location icon-location"></span>{{location}}{{/if}}
+                {{#if website}}<span class="author-link icon-link"></span><a href="{{website}}">{{website}}</a>{{/if}}
+                <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+            </div>
+            <p class="authorBio">{{bio}}</p>
+    </section>
+
+{{/author}}
+
+{{>wookmark}}
+</article>

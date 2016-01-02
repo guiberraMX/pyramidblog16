@@ -1,0 +1,30 @@
+{{!< default}}
+{{#post}}
+<article id="postMain" class="{{post_class}}">
+    <div class="heroImage {{#if image}} showHeroImage" style="background-image: url({{image}}) {{/if}}">
+
+        <div class="tagShare">
+            <div class="tags">{{tags separator=", "}}</div>
+            <div class="shareIcon icon-share"><!-- --></div>
+            <div class="share">
+                <a class="icon-twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"></a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"></a>
+                <a class="icon-googleplus" href="https://plus.google.com/share?url={{url absolute="true"}}"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"></a>
+            </div>
+        </div>
+    </div>
+    <section class="postContent doubleColumn">
+        <h1 class="postTitle">{{{title}}}</h1>
+        <time class="dateStamp" datetime="{{date format='YYYY-MM-DD'}}">
+            <span>&mdash;&ensp;</span>
+            <i>Published {{date format="DD MMM"}} by {{author}}</i>
+            <span>&ensp;&mdash;</span>
+        </time>
+        {{content}}
+    </section>
+    {{>disqus}}
+</article>
+{{/post}}

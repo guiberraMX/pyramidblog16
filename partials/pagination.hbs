@@ -1,0 +1,9 @@
+<div class="pagination pag" data-page="{{page}}" data-total-pages="{{pages}}">
+    {{#if prev}}
+        <a class="ajaxNewerPosts readMore" href="{{page_url prev}}">&larr;</a>
+    {{/if}}
+   <span class="pageNumber">Page <span class="curPage">{{page}}</span> of {{pages}}</span>
+    {{#if next}}
+        <a class="ajaxOlderPosts readMore" href="{{page_url next}}">&rarr;</a>
+    {{/if}}
+</div>
