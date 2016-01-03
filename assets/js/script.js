@@ -28,7 +28,7 @@ var sliderWait = 5000;
 3. All post items are portrait
 4. All post items are landscape
 */
-var wookmarkLayout = 2;
+var wookmarkLayout = 1;
 
 /*---------------------------
  Turn on off news feed
