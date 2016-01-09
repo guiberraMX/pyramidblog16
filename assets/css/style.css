@@ -2,6 +2,7 @@
 /* mixin's, imports and support checks//
 /* ============================================================ */
 @import url(//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic|Yanone+Kaffeesatz:400,300);
+@import url(https://fonts.googleapis.com/css?family=Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,900,800italic,800,700italic,900italic,700,600italic,600);
 /* line 74, ../scss/style.scss */
 #supportCheck input {
   display: none;
@@ -802,7 +803,8 @@ input:invalid {
   margin-top: 8px;
   line-height: 14.5px;
   font-size: 12px;
-  font-family: "PT Sans", "Myriad Pro", sans-serif;
+ font-family: 'Exo 2', sans-serif;
+ font-weight: 900;
   color: #404e56;
 }
 /* line 695, ../scss/style.scss */
