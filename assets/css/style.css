@@ -13,6 +13,41 @@
   width: 200px;
 }
 
+
+
+.blue{
+  color: #2ea0a0 !important;
+}
+
+.red{
+  color: #a5355b !important;
+}
+
+.green{
+  color: #93ba7f !important;
+}
+
+.purple{
+  color: #7454b2 !important;
+}
+
+.infos{
+  color: #333333 !important;
+}
+
+.infos2{
+  color: #e1e1e1 !important;
+}
+
+.nones{
+  display: none !important;
+}
+
+.tags{
+  display: none !important;
+}
+
+
 /* ============================================================ */
 /* Foundations - bare minimum css for functioning website */
 /* ============================================================ */
@@ -120,7 +155,7 @@ nav {
   width: 68px;
   width: 270px;
   height: 100%;
-  background: #262f34;
+  background: #191919;
   -moz-transition: width 0.4s ease 0.4s;
   -o-transition: width 0.4s ease 0.4s;
   -webkit-transition: width 0.4s ease;
@@ -139,12 +174,12 @@ nav .logoContain {
   text-align: center;
   font-size: 22px;
   line-height: 65px;
-  background: #ef6752;
+  background: #000000;
   display: inline-block;
 }
 /* line 170, ../scss/style.scss */
 nav .logoContain .logo {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: "Exo 2", sans-serif;
   margin-top: 10px;
   line-height: 21px;
   height: 65px;
@@ -205,15 +240,15 @@ nav #mainNav .menu:hover {
 }
 /* line 226, ../scss/style.scss */
 nav #mainNav > li:last-of-type {
-  border-bottom: solid 1px #404e56;
+  border-bottom: solid 1px #000;
 }
 /* line 229, ../scss/style.scss */
 nav #mainNav li {
   padding: 0;
   list-style: none;
   vertical-align: middle;
-  border-top: solid 1px #404e56;
-  background: #15232b;
+  border-top: solid 1px #000;
+  background: #191919;
   -moz-transition: background 0.4s ease;
   -o-transition: background 0.4s ease;
   -webkit-transition: background 0.4s ease;
@@ -274,7 +309,7 @@ nav #mainNav li .expandButton {
 /* line 282, ../scss/style.scss */
 nav #mainNav li #subMenuCheck1:checked ~ ul li, nav #mainNav li #subMenuCheck2:checked ~ ul li, nav #mainNav li #subMenuCheck3:checked ~ ul li, nav #mainNav li #subMenuCheck4:checked ~ ul li, nav #mainNav li #subMenuCheck5:checked ~ ul li, nav #mainNav li #subMenuCheck6:checked ~ ul li, nav #mainNav li #subMenuCheck7:checked ~ ul li, nav #mainNav li #subMenuCheck8:checked ~ ul li {
   height: 40px;
-  border-top: solid 1px #404e56;
+  border-top: solid 1px #000;
 }
 /* line 285, ../scss/style.scss */
 nav #mainNav li #subMenuCheck1:checked ~ ul li a, nav #mainNav li #subMenuCheck2:checked ~ ul li a, nav #mainNav li #subMenuCheck3:checked ~ ul li a, nav #mainNav li #subMenuCheck4:checked ~ ul li a, nav #mainNav li #subMenuCheck5:checked ~ ul li a, nav #mainNav li #subMenuCheck6:checked ~ ul li a, nav #mainNav li #subMenuCheck7:checked ~ ul li a, nav #mainNav li #subMenuCheck8:checked ~ ul li a {
@@ -302,8 +337,8 @@ nav #mainNav li ul li {
   height: 0;
   line-height: 43px;
   font-style: italic;
-  border-top: solid 0px #404e56;
-  background: #262f34;
+  border-top: solid 0px #000;
+  background: #000;
   -moz-transition: border 0.4s ease, background 0.4s ease, height 0.4s ease;
   -o-transition: border 0.4s ease, background 0.4s ease, height 0.4s ease;
   -webkit-transition: border 0.4s ease, background 0.4s ease, height 0.4s ease;
@@ -322,7 +357,7 @@ nav #mainNav li ul li a {
 }
 /* line 318, ../scss/style.scss */
 nav #mainNav li ul li:hover {
-  background: #2d3940;
+  background: #191919;
 }
 /* line 324, ../scss/style.scss */
 nav #mainNav li .search input + label {
@@ -354,16 +389,16 @@ nav #mainNav li .search input[type=text] {
   width: 140px;
   border: none;
   outline: none;
-  border-bottom: 1px solid #419ee2;
+  border-bottom: 1px solid #000;
 }
 /* line 355, ../scss/style.scss */
 nav #mainNav li .search input[type=text]:focus {
-  border-bottom: 1px solid #419ee2;
+  border-bottom: 1px solid #000;
 }
 /* line 361, ../scss/style.scss */
 nav #mainNav .openSubMenu ul li {
   height: 40px;
-  border-top: solid 1px #404e56;
+  border-top: solid 1px #000;
 }
 /* line 365, ../scss/style.scss */
 nav #mainNav .openSubMenu ul li a {
@@ -565,7 +600,7 @@ input:invalid {
 /* line 496, ../scss/style.scss */
 #newsFeed #filters #navUnderline #highlight {
   position: relative;
-  background: #ef6752;
+  background: #000;
   height: inherit;
   line-height: inherit;
   width: 0px;
@@ -804,7 +839,7 @@ input:invalid {
   line-height: 14.5px;
   font-size: 12px;
  font-family: 'Exo 2', sans-serif;
- font-weight: 900;
+ font-weight: 400;
   color: #404e56;
 }
 /* line 695, ../scss/style.scss */
@@ -814,7 +849,7 @@ input:invalid {
 }
 /* line 696, ../scss/style.scss */
 #newsFeed .previewContainer .dateStamp, #newsFeed .noResults .dateStamp {
-  font-family: "PT Sans", "Myriad Pro", sans-serif;
+  font-family: "Exo 2", sans-serif;
   text-transform: uppercase;
   color: #c2c4c7;
   font-size: 9px;
@@ -847,7 +882,7 @@ input:invalid {
   content: "";
   font-size: 1px;
   line-height: 1px;
-  background: #ef6752;
+  background: #000;
   width: 3px;
   height: 3px;
   position: absolute;
@@ -944,7 +979,7 @@ input:invalid {
 }
 /* line 795, ../scss/style.scss */
 .featuredContainer .pagination .dotCurrent {
-  background: #ef6752;
+  background: #2ea0a0;
 }
 /* line 799, ../scss/style.scss */
 .featuredContainer .featureContent {
@@ -1049,12 +1084,12 @@ input:invalid {
   transition: color 0.4s ease, background 0.4s ease;
   margin-bottom: 0;
   border: none;
-  background: #419ee2;
+  background: #2ea0a0;
   color: #f0f1f3;
 }
 /* line 877, ../scss/style.scss */
 .featuredContainer .readMore:hover {
-  background: #ef6752;
+  background: #48c1be;
   color: #f0f1f3;
 }
 /* line 881, ../scss/style.scss */
@@ -1076,7 +1111,7 @@ input:invalid {
   z-index: 100;
   color: #f0f1f3;
   font-size: 20px;
-  background: #ef6752;
+  background: #2ea0a0;
   width: 40px;
   height: 70px;
   position: absolute;
@@ -1115,7 +1150,7 @@ input:invalid {
 /* line 924, ../scss/style.scss */
 .featuredContainer #controls .left:hover, .featuredContainer #controls .right:hover {
   height: 70px;
-  background: #ef6752;
+  background: #2ea0a0;
   -moz-transition-delay: 0s;
   -o-transition-delay: 0s;
   -webkit-transition-delay: 0s;
@@ -1200,7 +1235,7 @@ input:invalid {
 /* line 980, ../scss/style.scss */
 .featuredContainer #controls .hoverPrev hr {
   height: 1px;
-  background: #ef6752;
+  background: #262626;
   border: none;
 }
 /* line 985, ../scss/style.scss */
@@ -1924,18 +1959,19 @@ input:invalid {
 body {
   color: #4d5964;
   font-size: 14px;
-  font-family: 'PT Sans',"Myriad Pro", sans-serif;
-  font-family: "PT Sans", "Myriad Pro", sans-serif;
+ 
+  font-family: "Exo 2", sans-serif;
   letter-spacing: -0.001em;
   background: white;
+  font-weight: 300;
 }
 
 /* line 1637, ../scss/style.scss */
 h1, h2, h3, h4, h5, .dateStamp, .postTitle {
   color: #262f34;
   letter-spacing: 0.015em;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: 'Exo 2', sans-serif;
+  
   font-weight: 400;
   text-align: center;
   margin-bottom: 20px;
@@ -1991,9 +2027,9 @@ h1.postTitle, h1.postTitle a {
 
 /* line 1676, ../scss/style.scss */
 #postMain .postContent .dateStamp, .dateStamp {
-  color: #ef6752;
+  color: #c4c4c4;
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 0.02em;
   margin-top: 20px;
   display: block;
@@ -2001,14 +2037,14 @@ h1.postTitle, h1.postTitle a {
 /* line 1683, ../scss/style.scss */
 #postMain .postContent .dateStamp a, .dateStamp a {
   padding: 0;
-  color: #ef6752;
+  color: #c4c4c4;
   text-decoration: none;
 }
 /* line 1688, ../scss/style.scss */
 #postMain .postContent .dateStamp a:hover, .dateStamp a:hover {
   text-decoration: underline;
   background: none;
-  color: #ef6752;
+  color: #c4c4c4;
 }
 
 /* line 1694, ../scss/style.scss */
@@ -2069,6 +2105,7 @@ blockquote {
 .tagShare a {
   color: #f0f1f3;
   text-decoration: none;
+
 }
 /* line 1743, ../scss/style.scss */
 .tagShare .tags, .tagShare .share, .tagShare .shareIcon {
@@ -2085,13 +2122,14 @@ blockquote {
 }
 /* line 1757, ../scss/style.scss */
 .tagShare .shareIcon {
-  height: 35px;
-  width: 35px;
-  background: #404e56;
+  height: 40px;
+  width: 65px;
+  background: #262626;
   text-align: center;
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  padding-top: 5px !important;
+  font-size: 21px;
   line-height: 31px;
 }
 /* line 1768, ../scss/style.scss */
@@ -2143,19 +2181,19 @@ blockquote {
 /* line 1811, ../scss/style.scss */
 #nprogress .bar {
   z-index: 100000;
-  background: #ef6752;
+  background: #262626;
 }
 
 /* line 1813, ../scss/style.scss */
 #nprogress .peg {
   z-index: 1000000000;
-  box-shadow: 0 0 10px #ef6752, 0 0 5px #ef6752;
+  box-shadow: 0 0 10px #262626, 0 0 5px #262626;
   margin-left: 100px;
 }
 
 /* line 1815, ../scss/style.scss */
 #nprogress .spinner-icon {
   z-index: 1000000000;
-  border-top-color: #ef6752;
-  border-left-color: #ef6752;
+  border-top-color: #262626;
+  border-left-color: #262626;
 }
